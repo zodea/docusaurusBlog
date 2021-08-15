@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+    <channel>
+        <title>Zodea小屋 Blog</title>
+        <link>https://github.com/zodea.github.io/</link>
+        <description>Zodea小屋 Blog</description>
+        <lastBuildDate>Sun, 15 Aug 2021 00:00:00 GMT</lastBuildDate>
+        <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
+        <generator>https://github.com/jpmonette/feed</generator>
+        <item>
+            <title><![CDATA[homebrew]]></title>
+            <link>https://github.com/zodea.github.io/2021/08/15/homebrew命令</link>
+            <guid>homebrew</guid>
+            <pubDate>Sun, 15 Aug 2021 00:00:00 GMT</pubDate>
+            <description><![CDATA[安装]]></description>
+        </item>
+    </channel>
+</rss>

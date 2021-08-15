@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>https://github.com/zodea.github.io/</id>
+    <title>Zodea小屋 Blog</title>
+    <updated>2021-08-15T00:00:00.000Z</updated>
+    <generator>https://github.com/jpmonette/feed</generator>
+    <link rel="alternate" href="https://github.com/zodea.github.io/"/>
+    <subtitle>Zodea小屋 Blog</subtitle>
+    <icon>https://github.com/zodea.github.io/img/favicon.ico</icon>
+    <entry>
+        <title type="html"><![CDATA[homebrew]]></title>
+        <id>homebrew</id>
+        <link href="https://github.com/zodea.github.io/2021/08/15/homebrew命令"/>
+        <updated>2021-08-15T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[安装]]></summary>
+    </entry>
+</feed>
