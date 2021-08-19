@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkmy_website=self.webpackChunkmy_website||[]).push([[535],{5641:function(e){e.exports=JSON.parse('{"title":"Recent posts","items":[{"title":"vite\u642d\u5efa","permalink":"/2021/08/19/vite\u642d\u5efa"},{"title":"homebrew","permalink":"/2021/08/15/homebrew\u547d\u4ee4"}]}')}}]);

@@ -4,9 +4,16 @@
         <title>Zodea小屋 Blog</title>
         <link>https://github.com/zodea.github.io/</link>
         <description>Zodea小屋 Blog</description>
-        <lastBuildDate>Sun, 15 Aug 2021 00:00:00 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 19 Aug 2021 00:00:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
+        <item>
+            <title><![CDATA[vite搭建]]></title>
+            <link>https://github.com/zodea.github.io/2021/08/19/vite搭建</link>
+            <guid>vite搭建</guid>
+            <pubDate>Thu, 19 Aug 2021 00:00:00 GMT</pubDate>
+            <description><![CDATA[pnpm]]></description>
+        </item>
         <item>
             <title><![CDATA[homebrew]]></title>
             <link>https://github.com/zodea.github.io/2021/08/15/homebrew命令</link>
