@@ -4,6 +4,8 @@ title: homebrew
 author: Zodea
 author_url: https://github.com/zodea
 tags: ["homebrew", "mac", "git-svn"]
+date: 2021-08-15
+slug: homebrew
 ---
 
 # homebrew
