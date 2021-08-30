@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkmy_website=self.webpackChunkmy_website||[]).push([[926],{4771:function(e){e.exports=JSON.parse('{"allTagsPath":"/tags","slug":"vue-3","name":"vue3","count":1,"permalink":"/tags/vue-3"}')}}]);

@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkmy_website=self.webpackChunkmy_website||[]).push([[280],{2611:function(e){e.exports=JSON.parse('{"allTagsPath":"/en/tags","slug":"/en/tags/type-script","name":"TypeScript","count":1,"permalink":"/en/tags/type-script"}')}}]);
