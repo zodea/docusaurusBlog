@@ -4,14 +4,14 @@
         <title>Zodea小屋 Blog</title>
         <link>https://github.com/zodea.github.io/</link>
         <description>Zodea小屋 Blog</description>
-        <lastBuildDate>Thu, 19 Aug 2021 00:00:00 GMT</lastBuildDate>
+        <lastBuildDate>Mon, 30 Aug 2021 00:00:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <item>
             <title><![CDATA[vite搭建（一）CLI搭建及dotFile的配置]]></title>
             <link>https://github.com/zodea.github.io/vite1</link>
             <guid>vite1</guid>
-            <pubDate>Thu, 19 Aug 2021 00:00:00 GMT</pubDate>
+            <pubDate>Mon, 30 Aug 2021 00:00:00 GMT</pubDate>
             <description><![CDATA[pnpm]]></description>
         </item>
         <item>
