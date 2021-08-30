@@ -12,7 +12,7 @@
         <id>vite1</id>
         <link href="https://github.com/zodea.github.io/vite1"/>
         <updated>2021-08-30T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[pnpm]]></summary>
+        <summary type="html"><![CDATA[本文档大部分起因为在开发一个项目时经常因为不同的开发者有着不同的格式化规则，而在多人协作时往往会因为不用的格式化标准造成对项目合并后的冲突，因此静下心来寻找了很多的代码规范相关的文章，有幸github查找后台模版时发现了 Vue vben admin。在这找到了很多大开眼界的依赖，及dotFile文件对项目文件进行管理，在实际的上手体验中，开发的体验也提升了很多。]]></summary>
         <author>
             <name>Zodea</name>
             <uri>https://github.com/zodea</uri>
