@@ -9,8 +9,8 @@
     <icon>https://github.com/zodea.github.io/img/favicon.ico</icon>
     <entry>
         <title type="html"><![CDATA[vite搭建（一）CLI搭建及dotFile的配置]]></title>
-        <id>vite搭建（一）CLI搭建及dotFile的配置</id>
-        <link href="https://github.com/zodea.github.io/vite搭建1"/>
+        <id>vite1</id>
+        <link href="https://github.com/zodea.github.io/vite1"/>
         <updated>2021-08-19T00:00:00.000Z</updated>
         <summary type="html"><![CDATA[pnpm]]></summary>
         <author>
@@ -21,7 +21,7 @@
     <entry>
         <title type="html"><![CDATA[homebrew]]></title>
         <id>homebrew</id>
-        <link href="https://github.com/zodea.github.io/homebrew命令"/>
+        <link href="https://github.com/zodea.github.io/homebrew"/>
         <updated>2021-08-15T00:00:00.000Z</updated>
         <summary type="html"><![CDATA[安装]]></summary>
         <author>

@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkmy_website=self.webpackChunkmy_website||[]).push([[80],{2837:function(e){e.exports=JSON.parse('{"allTagsPath":"/tags","slug":"/tags/prettier","name":"prettier","count":1,"permalink":"/tags/prettier"}')}}]);

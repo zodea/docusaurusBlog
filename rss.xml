@@ -9,14 +9,14 @@
         <generator>https://github.com/jpmonette/feed</generator>
         <item>
             <title><![CDATA[vite搭建（一）CLI搭建及dotFile的配置]]></title>
-            <link>https://github.com/zodea.github.io/vite搭建1</link>
-            <guid>vite搭建（一）CLI搭建及dotFile的配置</guid>
+            <link>https://github.com/zodea.github.io/vite1</link>
+            <guid>vite1</guid>
             <pubDate>Thu, 19 Aug 2021 00:00:00 GMT</pubDate>
             <description><![CDATA[pnpm]]></description>
         </item>
         <item>
             <title><![CDATA[homebrew]]></title>
-            <link>https://github.com/zodea.github.io/homebrew命令</link>
+            <link>https://github.com/zodea.github.io/homebrew</link>
             <guid>homebrew</guid>
             <pubDate>Sun, 15 Aug 2021 00:00:00 GMT</pubDate>
             <description><![CDATA[安装]]></description>
