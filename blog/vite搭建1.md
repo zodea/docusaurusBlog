@@ -3,7 +3,7 @@ title: vite搭建（一）CLI搭建及dotFile的配置
 author: Zodea
 author_url: https://github.com/zodea
 tags: ["vite", "vue3", "ESLint", "prettier", "TypeScript"]
-date: 2021-08-19
+date: 2021-08-30
 slug: vite1
 ---
 import Tabs from '@theme/Tabs';
@@ -118,8 +118,12 @@ import TabItem from '@theme/TabItem';
 ## gitignore
 在项目构建之初，我们就需要提前先配置好git的相关信息及其需要忽略的提交文件
 首先在命令行执行下面的命令初始化项目
-> git init
-然后再创建忽略文件，这里我推荐使用vscode的 **codezombiech.gitignore** 插件，由他可以通过操作生成相关的忽略配置，或使用下面的简单配置：
+
+```shell
+git init
+```
+
+然后再创建git忽略文件，使用下面的简单配置：
 
 ```text title=".gitignore"
 node_modules
@@ -154,8 +158,12 @@ pnpm-debug.log*
 *.sw?
 ```
 
+:::note
+这里我推荐使用vscode的 **codezombiech.gitignore** 插件，由他可以通过操作生成相关的忽略配置
+:::
+
 ## EditorConfig
-不同的IDE都支持该插件，能告诉你的IDE这么去约束你的项目文件，在vscode中可以安装 **editorconfig.editorconfig** 该插件，然后在vscode的资源管理器右键可以通过Generate .editorconfig生成一份默认的约束文件。
+不同的IDE都支持该插件，能告诉你的IDE这么去约束你的项目文件
 
 ```editorconfig title=".editorconfig"
 # EditorConfig is awesome: https://EditorConfig.org
@@ -221,6 +229,9 @@ indent_style = tab
   </div>
 </details>
 
+:::note
+在vscode中可以安装 **editorconfig.editorconfig** 该插件，然后在vscode的资源管理器右键可以通过Generate .editorconfig生成一份默认的约束文件。
+:::
 
 ## ESLint
 安装代码检测工具，并在vite中启用自动更新
@@ -327,7 +338,7 @@ module.exports = defineConfig({
   - `eslint:recommended`是ESLint内置的 "推荐 "配置--它打开了一个小的、合理的规则集，为众所周知的最佳实践提供了提示。
   - `plugin:@typescript-eslint/recommended`是我们的 "推荐 "配置--它就像`eslint:recommended`一样，只是它只开启我们TypeScript专用插件的规则。
 
-:::tip
+:::caution
 由于vue有特殊的template语法，所以对于代码检测的部分，需要更换为[elint-pluign-vue](https://eslint.vuejs.org/user-guide/#what-is-the-use-the-latest-vue-eslint-parser-error)插件，根据里面的教程，我们对当前的代码检测进行替换修改。
 :::
 
@@ -395,7 +406,9 @@ export default defineConfig({
 ```
 
 ## prettier
+:::info
 此时我们再添加格式化代码的插件，使用[prettier](https://prettier.io/)，也可以结合 `vscode` 的 `esbenp.prettier-vscode` 插件来格式化。
+:::
 
 我们需要安装
 - `prettier`: 提供 `eslint-plugin-prettier` 的格式化依赖
@@ -434,6 +447,7 @@ export default defineConfig({
 </Tabs>
 
 然后就配置prettier
+
 ```javascript title="prettier.config.js"
 module.exports = {
   printWidth: 100,
@@ -458,6 +472,7 @@ module.exports = {
 ```
 
 配置忽略文件
+
 ``` title=".prettierignore"
 /dist/*
 .local
@@ -632,4 +647,6 @@ module.exports = {
   </div>
 </details>
 
-目前基本的dotFile配置就在此告一段落，对于.env的多环境配置及其他的dotFile会在之后的文章看情况更新
+:::danger
+目前基本的dotFile代码风格配置就在此告一段落，关于git提交检测及文件命名判断的相关检测会在下个章节进行介绍，对于.env的多环境配置会在之后的文章看情况更新。
+:::
