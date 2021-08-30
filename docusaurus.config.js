@@ -9,7 +9,7 @@ module.exports = {
   },
   title: 'Zodea小屋',
   tagline: '',
-  url: 'https://github.com/zodea.github.io',
+  url: 'https://github.com/zodea.github.io/',
   baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',

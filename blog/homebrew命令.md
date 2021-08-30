@@ -1,5 +1,4 @@
 ---
-id: homebrew
 title: homebrew
 author: Zodea
 author_url: https://github.com/zodea

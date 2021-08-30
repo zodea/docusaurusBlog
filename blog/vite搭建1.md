@@ -9,6 +9,9 @@ slug: vite1
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
+本文档大部分起因为在开发一个项目时经常因为不同的开发者有着不同的格式化规则，而在多人协作时往往会因为不用的格式化标准造成对项目合并后的冲突，因此静下心来寻找了很多的代码规范相关的文章，有幸github查找后台模版时发现了 [Vue vben admin](https://github.com/anncwb/vue-vben-admin)。在这找到了很多大开眼界的依赖，及dotFile文件对项目文件进行管理，在实际的上手体验中，开发的体验也提升了很多。
+
+下面是我个人的一些开发推荐，及依赖的一些学习，有更多更好的新东西，我也会采纳并学习扩展知识面。
 ## pnpm
 相较 [npm](https://www.npmjs.com/) 、 [yarn](https://yarnpkg.com/) 使用 [pnpm](https://www.pnpm.cn/) 的一个优势是，节省磁盘空间并提升安装速度，详情可点击官网查看。相对部分旧项目，pnpm可能在依赖结构上有所问题，所以尽可能在新项目中使用。
 
@@ -36,6 +39,30 @@ import TabItem from '@theme/TabItem';
 </Tabs>
 
 为了减少内存的使用，pnpm在更新插件的时候会自动清理掉低版本的依赖，当然你也可以使用 `pnpm store prune` 对未引用的依赖进行删除。当你在切换分支时，如果依赖有不同，且被清理掉了，则需要安装缺少的依赖才可继续运行。
+
+:::tip
+关于在版本依赖的选择和安装依赖的使用并不限制你的选择，我会提供`npm`、`yarn`、`pnpm`三项的使用方法。对于想自动化部署，例如**Github的Actions**，好像pnpm会有缺陷，这部分之后有了解会对这部分进行完善。
+:::
+
+<!--truncate-->
+### 脚本命令
+在后续的章节中，我也会带上各依赖可使用的一些脚本命令，对于这部分的拓展就看项目的使用了，只提供vben中的例子做参考。
+:::caution
+后续的脚本命令也都会是在根目录下 **package.json** 的 **scripts** 属性内，因此会对这部分做个简写，只提供命令的写法。使用方法同执行运行或打包的脚本命令一样。
+:::
+
+```json title="package.json"
+// ...
+"scripts": {
+  "bootstrap": "yarn install",
+  "bootstrap:pnpm": "pnpm install",
+}
+// ...
+```
+
+:::note
+后续会在其他脚本中对该命令进行一个拓展
+:::
 
 ## vite
 [Vite](https://cn.vitejs.dev/) 相较 [webpack](https://webpack.docschina.org/) 依旧是快，而且这个也是基于Vite2搭建，所以如果想使用webpack系列的，可以查看[Vue CLI](https://cli.vuejs.org/zh/) 的教程进行安装。
@@ -72,9 +99,6 @@ import TabItem from '@theme/TabItem';
 
   </TabItem>
 </Tabs>
-
-<!--truncate-->
-
 
 然后按照提示操作即可！
 
@@ -192,10 +216,13 @@ indent_style = tab
 
 ```
 
+> **[原链接](https://www.kuxiaoxin.com/archives/7)**
+
 <details>
   <summary>带注释版</summary>
   <div>
 
+  ```
     # ↓告诉EditorConfig插件，这是根文件，不用继续往上查找。
     root = true
 
@@ -226,6 +253,7 @@ indent_style = tab
 
     [Makefile]
     indent_style = tab
+  ```
   </div>
 </details>
 
@@ -405,6 +433,25 @@ export default defineConfig({
 });
 ```
 
+### 脚本命令
+使用eslint的校验:
+- `--cache`: 只校验更改的文件，
+- `--max-warnings`: 这个选项允许你指定一个警告的阈值，当你的项目中有太多违反规则的警告时，这个阈值被用来强制 ESLint 以错误状态退出。通过指定一个 **-1** 的阈值或省略这个选项将会避免这种行为
+- `--fix`: 该选项指示 ESLint 试图修复尽可能多的问题。修复只针对实际文件本身，而且剩下的未修复的问题才会输出。不是所有的问题都能使用这个选项进行修复，该选项在以下情形中不起作用：
+    - 当代码传递给 ESLint 时，这个选项抛出一个错误。
+    - 该选项对使用处理器的代码没有影响，除非处理器选择允许自动修复。
+
+> [查看更多配置](https://cn.eslint.org/docs/user-guide/command-line-interface)
+
+:::info
+因此此处的校验脚本即为：查找src及mock文件下的以.vue,.ts,.tsx为后缀且变动的文件，对他们进行修复，当修复后的警告大于0后以失败的状况退出当前脚本。后续结合husky的代码提交检测能发挥很大的作用。
+:::
+
+```json
+"lint:eslint": "eslint --cache --max-warnings 0  \"{src,mock}/**/*.{vue,ts,tsx}\" --fix",
+```
+
+
 ## prettier
 :::info
 此时我们再添加格式化代码的插件，使用[prettier](https://prettier.io/)，也可以结合 `vscode` 的 `esbenp.prettier-vscode` 插件来格式化。
@@ -559,6 +606,8 @@ module.exports = {
 // ...
 ```
 
+> **[原链接](https://www.kuxiaoxin.com/archives/14#22%E5%B8%A6%E6%B3%A8%E8%A7%A3%E4%BB%A3%E7%A0%81)**
+
 <details>
   <summary>带注释版</summary>
   <div>
@@ -646,6 +695,18 @@ module.exports = {
 
   </div>
 </details>
+
+### 脚本命令
+使用prettier的校验：
+- `--write`: 这将就地重写所有处理过的文件。这与eslint --fix的工作流程相当。你也可以使用别名 `-w`。
+
+```json
+"lint:prettier": "prettier --write  \"src/**/*.{js,json,tsx,css,less,scss,vue,html,md}\"",
+```
+
+:::info
+此处的作用就是将src目录下任何子目录内的以`.js`,`.json`,`.tsx`,`.css`,`.less`,`.scss`,`.vue`,`.html`,`.md`为后缀的文件通过prettier进行格式重写
+:::
 
 :::danger
 目前基本的dotFile代码风格配置就在此告一段落，关于git提交检测及文件命名判断的相关检测会在下个章节进行介绍，对于.env的多环境配置会在之后的文章看情况更新。
