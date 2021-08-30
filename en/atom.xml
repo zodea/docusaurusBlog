@@ -2,28 +2,28 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://github.com/zodea.github.io/en/</id>
     <title>Zodea小屋 Blog</title>
-    <updated>2021-08-30T07:54:35.491Z</updated>
+    <updated>2021-08-19T00:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://github.com/zodea.github.io/en/"/>
     <subtitle>Zodea小屋 Blog</subtitle>
     <icon>https://github.com/zodea.github.io/en/img/favicon.ico</icon>
     <entry>
-        <title type="html"><![CDATA[homebrew]]></title>
-        <id>homebrew</id>
-        <link href="https://github.com/zodea.github.io/en/homebrew命令"/>
-        <updated>2021-08-30T07:54:35.491Z</updated>
-        <summary type="html"><![CDATA[安装]]></summary>
+        <title type="html"><![CDATA[vite搭建（一）CLI搭建及dotFile的配置]]></title>
+        <id>vite搭建（一）CLI搭建及dotFile的配置</id>
+        <link href="https://github.com/zodea.github.io/en/vite搭建1"/>
+        <updated>2021-08-19T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[pnpm]]></summary>
         <author>
             <name>Zodea</name>
             <uri>https://github.com/zodea</uri>
         </author>
     </entry>
     <entry>
-        <title type="html"><![CDATA[vite搭建（一）CLI搭建及dotFile的配置]]></title>
-        <id>vite搭建（一）CLI搭建及dotFile的配置</id>
-        <link href="https://github.com/zodea.github.io/en/vite搭建1"/>
-        <updated>2021-08-30T07:54:35.491Z</updated>
-        <summary type="html"><![CDATA[pnpm]]></summary>
+        <title type="html"><![CDATA[homebrew]]></title>
+        <id>homebrew</id>
+        <link href="https://github.com/zodea.github.io/en/homebrew命令"/>
+        <updated>2021-08-15T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[安装]]></summary>
         <author>
             <name>Zodea</name>
             <uri>https://github.com/zodea</uri>
