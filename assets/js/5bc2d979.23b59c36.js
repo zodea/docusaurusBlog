@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkmy_website=self.webpackChunkmy_website||[]).push([[981],{5868:function(e){e.exports=JSON.parse('{"allTagsPath":"/tags","slug":"/tags/commitizen","name":"commitizen","count":1,"permalink":"/tags/commitizen"}')}}]);

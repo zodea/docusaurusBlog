@@ -4,9 +4,16 @@
         <title>Zodea小屋 Blog</title>
         <link>https://github.com/zodea.github.io/</link>
         <description>Zodea小屋 Blog</description>
-        <lastBuildDate>Mon, 30 Aug 2021 00:00:00 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 02 Sep 2021 00:00:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
+        <item>
+            <title><![CDATA[vite搭建（二）代码提交前检测]]></title>
+            <link>https://github.com/zodea.github.io/vite2</link>
+            <guid>vite2</guid>
+            <pubDate>Thu, 02 Sep 2021 00:00:00 GMT</pubDate>
+            <description><![CDATA[再续前缘，这里我们开始介绍和git提交相关的检测，主要会涉及到 Stylelint、 husky、 lint-staged。]]></description>
+        </item>
         <item>
             <title><![CDATA[vite搭建（一）CLI搭建及dotFile的配置]]></title>
             <link>https://github.com/zodea.github.io/vite1</link>

@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkmy_website=self.webpackChunkmy_website||[]).push([[479],{9737:function(t){t.exports=JSON.parse('{"allTagsPath":"/en/tags","slug":"/en/tags/commitlint","name":"commitlint","count":1,"permalink":"/en/tags/commitlint"}')}}]);

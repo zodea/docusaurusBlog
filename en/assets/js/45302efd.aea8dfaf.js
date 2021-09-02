@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkmy_website=self.webpackChunkmy_website||[]).push([[319],{311:function(e){e.exports=JSON.parse('{"allTagsPath":"/en/tags","slug":"/en/tags/lint-staged","name":"lint-staged","count":1,"permalink":"/en/tags/lint-staged"}')}}]);

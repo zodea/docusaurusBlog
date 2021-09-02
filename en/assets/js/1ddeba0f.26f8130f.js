@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkmy_website=self.webpackChunkmy_website||[]).push([[667],{8479:function(e){e.exports=JSON.parse('{"permalink":"/en/","page":1,"postsPerPage":10,"totalPages":1,"totalCount":3,"previousPage":null,"nextPage":null,"blogDescription":"\u53d1\u6398\u65b0\u5174\u6280\u672f","blogTitle":"Zodea\u5c0f\u5c4b"}')}}]);

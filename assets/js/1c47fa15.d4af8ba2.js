@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkmy_website=self.webpackChunkmy_website||[]).push([[955],{1947:function(t){t.exports=JSON.parse('{"allTagsPath":"/tags","slug":"/tags/stylelint","name":"Stylelint","count":1,"permalink":"/tags/stylelint"}')}}]);
